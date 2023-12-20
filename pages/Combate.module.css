@@ -1,0 +1,120 @@
+/* .combate {
+  display: flex;
+  flex-direction: row;
+} */
+
+.combateImgPowerstats {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.combateDuelo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.combateTitle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.heroiCard1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+
+.heroiCard2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.heroiImg {
+  width: 250px;
+}
+
+.heroiImg2 {
+  display: none;
+}
+
+.combatePowerStats {
+  width: 20%;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.combatePowerStats p {
+  margin: 20px 0 40px 0;
+}
+
+.PowerStatsBall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.greenBall {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.redBall {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .heroiImg {
+    display: none;
+  }
+
+  .heroiImg2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .combatePowerStats {
+    padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroiCard1 h3 {
+    font-size:small;
+    width: 100px;
+  }
+
+  .heroiP {
+    margin: 0 !important;
+  }
+
+  .combatePowerStats {
+    padding-top: 110px;
+    margin-top: 10px;
+  }
+
+  .combatePowerStats p {
+    font-size: small;
+    position: relative;
+    margin: 40px 0 45px 0;
+  }
+
+  .heroiCard2 {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,124 @@
+.sidenav {
+  position: fixed;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  top: 80px;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ff9f59;
+  color: black;
+  z-index: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.searchInputContainer {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.sidenavInput {
+  width: 40%;
+  position: absolute;
+  text-align: center;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.searchIcon {
+  margin-right: 8px; 
+  fill: #666; 
+  width: 24px; 
+  height: 24px;
+  padding: 10px;
+}
+
+.searchInput {
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+}
+
+.searchInput:focus {
+  border: 1px solid #ff9f59;
+}
+
+.searchInput::placeholder {
+  font-size: 14px;
+}
+
+.buttonContainer p {
+  width: 250px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.buttonActive {
+  background-color: #FF0000 !important;
+  color: white !important;
+  width: 180px !important;
+  height: 40px !important;
+}
+
+.buttonDisabled {
+  background-color: #E9967A !important;
+  width: 180px !important;
+  height: 40px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .sidenav {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonContainer p {
+    margin-right: 30px;
+    /* width: 300px; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .searchInputContainer {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchInputContainer svg {
+    display: none;
+  }
+  .searchIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .sidenav {
+    top: 110px;
+  }
+}
