@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Header.module.css';
+import styles from '../styles/Header.module.css';
 
 function Header() {
 
   return (
     <div className={styles.header}>
-       <h1>Jornada de Heróis</h1> 
+      <h1>Jornada do Herói</h1> 
     </div>
   );
 }

@@ -8,7 +8,7 @@ export const styleBox = {
   backgroundColor: 'black',
   color: 'white',
   border: '2px solid #000',
-  boxShadow: 24,
+  boxShadow: '0 0 50px rgba(255, 255, 255, 0.8)',
   p: 4,
   };
 
@@ -17,7 +17,7 @@ export const styleh2 = {
   width: '100%',
   textAlign: 'end',
   fontSize: "30px",
-  };
+};
 
 export const styleh1 = {
   color: 'white',

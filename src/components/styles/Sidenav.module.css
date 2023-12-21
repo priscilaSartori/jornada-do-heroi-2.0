@@ -3,10 +3,10 @@
   display: flex;
   height: 50px;
   width: 100%;
-  top: 80px;
+  top: 50px;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #ff9f59;
+  background-color: darkblue;
   color: black;
   z-index: 1;
 }
@@ -52,10 +52,10 @@
   outline: none;
   font-size: 16px;
 }
-
+/* 
 .searchInput:focus {
-  border: 1px solid #ff9f59;
-}
+  border: 1px solid #69acc2;
+} */
 
 .searchInput::placeholder {
   font-size: 14px;
@@ -65,6 +65,7 @@
   width: 250px;
   padding-bottom: 10px;
   margin: 0;
+  color: #fff;
 }
 
 .buttonActive {
@@ -75,7 +76,7 @@
 }
 
 .buttonDisabled {
-  background-color: #E9967A !important;
+  background-color: #dadada !important;
   width: 180px !important;
   height: 40px !important;
 }

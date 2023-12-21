@@ -1,17 +1,13 @@
 "use client"
 import React from 'react';
-import Hero from '../pages/hero';
-import Sidenav from '../pages/Sidenav';
-import Header from '../pages/Header';
-import JourneyProvider from '../context/JourneyProvider';
+import JourneyProvider from '../src/context/JourneyProvider';
+import Homepage from '@/src/pages/Homepage';
 
 function Home() {
   
   return (
     <JourneyProvider>
-      <Header />
-      <Sidenav />
-      <Hero />
+      <Homepage />
     </JourneyProvider>
   );
 }

@@ -1,0 +1,64 @@
+.combate {
+  display: flex;
+  flex-direction: row;
+}
+
+.combateImgPowerstats {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.combateDuelo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.combateTitle1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.combateTitle2 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+}
+
+.PowerStatsBall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* @media screen and (max-width: 1000px) {
+  .combatePowerStats {
+    padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroiCard1 h3 {
+    font-size:small;
+    width: 100px;
+  }
+
+  .heroiP {
+    margin: 0 !important;
+  }
+
+  .combatePowerStats {
+    padding-top: 110px;
+    margin-top: 10px;
+  }
+
+  .combatePowerStats p {
+    font-size: small;
+    position: relative;
+    margin: 40px 0 45px 0;
+  }
+} */

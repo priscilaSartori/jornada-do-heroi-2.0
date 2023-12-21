@@ -1,7 +1,7 @@
 .heroi {
   position: absolute;
-  top: 130px;
-  background-color: black;
+  top: 100px;
+  background-color: #213e60;
   height: auto;
   min-height: 100%;
   width: 100%;
@@ -19,42 +19,60 @@
 
 .heroiLi {
   list-style-type: none;
-  width: 180px;
-  height: 280px;
-  border: 2px solid gray;
-  background-image: url('https://ae01.alicdn.com/kf/HTB1Ipo8iDnI8KJjSszgq6A8ApXaS/50-140cm-hero-comic-Spider-Man-Iron-Man-Avengers-knitted-cotton-fabric-For-Sewing-diy-Patchwork.jpg');
+  width: 200px;
+  height: 310px;
+  border: 5px solid #2196f3;
+  background-color: white;
   margin: 3px;
 }
 
 .heroiLiSelected {
   list-style-type: none;
-  border: 2px solid #FF0000;
-  background-image: url('https://ae01.alicdn.com/kf/HTB1Ipo8iDnI8KJjSszgq6A8ApXaS/50-140cm-hero-comic-Spider-Man-Iron-Man-Avengers-knitted-cotton-fabric-For-Sewing-diy-Patchwork.jpg');
-  width: 180px;
-  height: 280px;
-  margin: 5px;
+  width: 200px;
+  height: 310px;
+  border: 5px solid #FF0000;
+  background-color: black;
+  color: black;
+  margin: 3px;
 }
 
 .heroiImg {
-  width: 180px;
-  height: 180px; 
+  width: 200px;
+  height: 180px;
+  border-top: none;
+}
+
+.heroiImg2 {
+  width: 200px;
+  height: 250px;
   border-top: none;
 }
 
 .heroiInfo {
-  background-color: #fff;
   width: 90%;
+  color: white;
   position: relative;
   left: 8px;
-  height: 65px;
+  top: 5px;
+  height: 140px;
 }
 
 .heroiH4 {
   margin: 10px 0 0 0;
+  text-align: center;
+  color: black;
 }
 
-.heroiP {
-  margin: 20px 10px 20px 10px;
+.heroiPowerStats {
+  font-size: 12px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.powerStats {
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 750px) {
