@@ -52,10 +52,6 @@
   outline: none;
   font-size: 16px;
 }
-/* 
-.searchInput:focus {
-  border: 1px solid #69acc2;
-} */
 
 .searchInput::placeholder {
   font-size: 14px;
@@ -98,7 +94,6 @@
 
   .buttonContainer p {
     margin-right: 30px;
-    /* width: 300px; */
     height: auto;
     display: flex;
     flex-wrap: wrap;

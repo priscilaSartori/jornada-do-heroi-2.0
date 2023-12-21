@@ -53,19 +53,19 @@ export default function Heroi() {
                 <div>
                   <img className={styles.heroiImg} src={hero.images.sm} alt={hero.name} />
                   <div className={styles.heroiInfo}>
-                  <div className={styles.heroiPowerStats}>
+                    <div className={styles.heroiPowerStats}>
                       <p className={styles.powerStats}>
-                      <Lightbulb style={{ fontSize: 15, marginRight: 8 }}/>
-                      Intelligence:
-                    </p>
-                    <span>{hero.powerstats.intelligence}</span>
+                        <Lightbulb style={{ fontSize: 15, marginRight: 8 }}/>
+                        Intelligence:
+                      </p>
+                      <span>{hero.powerstats.intelligence}</span>
                     </div>
                     <div className={styles.heroiPowerStats}>
                       <p className={styles.powerStats}>
-                      <FlashOn style={{ fontSize: 15, marginRight: 8 }}/>
-                      Strength:
-                    </p>
-                    <span>{hero.powerstats.strength}</span>
+                        <FlashOn style={{ fontSize: 15, marginRight: 8 }}/>
+                        Strength:
+                      </p>
+                      <span>{hero.powerstats.strength}</span>
                     </div>
                     <div className={styles.heroiPowerStats}>
                       <p className={styles.powerStats}>
@@ -76,24 +76,24 @@ export default function Heroi() {
                     </div>
                     <div className={styles.heroiPowerStats}>
                       <p className={styles.powerStats}>
-                      <Security style={{ fontSize: 15, marginRight: 8 }}/>
-                      Durability:
-                    </p>
-                    <span>{hero.powerstats.durability}</span>
+                        <Security style={{ fontSize: 15, marginRight: 8 }}/>
+                        Durability:
+                      </p>
+                      <span>{hero.powerstats.durability}</span>
                     </div>
                     <div className={styles.heroiPowerStats}>
                       <p className={styles.powerStats}>
-                      <FitnessCenter style={{ fontSize: 15, marginRight: 8 }}/>
-                      Power:
-                    </p>
-                    <span>{hero.powerstats.power}</span>
+                        <FitnessCenter style={{ fontSize: 15, marginRight: 8 }}/>
+                        Power:
+                      </p>
+                      <span>{hero.powerstats.power}</span>
                     </div>
                     <div className={styles.heroiPowerStats}>
                       <p className={styles.powerStats}>
-                      <SportsKabaddi style={{ fontSize: 15, marginRight: 8 }}/>
-                      Combat:
-                    </p>
-                    <span>{hero.powerstats.combat}</span>
+                        <SportsKabaddi style={{ fontSize: 15, marginRight: 8 }}/>
+                        Combat:
+                      </p>
+                      <span>{hero.powerstats.combat}</span>
                     </div>
                   </div>                  
                 </div> :
