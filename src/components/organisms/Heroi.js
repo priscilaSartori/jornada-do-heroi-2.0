@@ -5,10 +5,18 @@ import Combate from './Combate';
 import styles from '../styles/Heroi.module.css';
 import { heroisData } from '../../hooks/mock';
 import { Lightbulb, FitnessCenter, Speed, Security, FlashOn, SportsKabaddi } from '@mui/icons-material';
+import Sidenav from './Sidenav';
 
 export default function Heroi() {
-  const { searchTerm, selectedHeroes, setSelectedHeroes } = useContext(JourneyContext);
+  const { 
+    searchTerm, 
+    selectedHeroes, 
+    setSelectedHeroes, 
+    selectedHeroesMiniatures,
+    setSelectedHeroesMiniatures
+  } = useContext(JourneyContext);
   const [heroisDisplay, setHeroisDisplay] = useState([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,12 +39,23 @@ export default function Heroi() {
   const selectHero = (hero) => {
     if (selectedHeroes.includes(hero)) {
       setSelectedHeroes(selectedHeroes.filter((selectedHero) => selectedHero !== hero));
+      removeFromSelectedHeroesMiniatures(hero);
     } else if (selectedHeroes.length < 2) {
       setSelectedHeroes([...selectedHeroes, hero]);
+      addToSelectedHeroesMiniatures(hero);
     }
   };
 
   const isHeroSelected = (hero) => selectedHeroes.includes(hero);
+
+  const addToSelectedHeroesMiniatures = (hero) => {
+    setSelectedHeroesMiniatures([...selectedHeroesMiniatures, hero]);
+  };
+
+  const removeFromSelectedHeroesMiniatures = (hero) => {
+    setSelectedHeroes(selectedHeroes.filter((selectedHero) => selectedHero !== hero));
+    setSelectedHeroesMiniatures(selectedHeroesMiniatures.filter((selectedHero) => selectedHero !== hero));
+  };
 
   return (
     <div>
@@ -106,6 +125,7 @@ export default function Heroi() {
           ))}
         </ul>
       </div>
+      <Sidenav selectedHeroesMiniatures={selectedHeroesMiniatures} removeFromSelectedHeroesMiniatures={removeFromSelectedHeroesMiniatures} />      
     </div>
   );
 }

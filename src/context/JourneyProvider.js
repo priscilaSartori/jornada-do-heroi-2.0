@@ -7,6 +7,7 @@ function JourneyProvider({ children }) {
   const [selectedHeroes, setSelectedHeroes] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [winner, setWinner] = useState('');
+  const [selectedHeroesMiniatures, setSelectedHeroesMiniatures] = useState([]);
 
   const values = useMemo(() => ({
     searchTerm,
@@ -17,11 +18,14 @@ function JourneyProvider({ children }) {
     setModalOpen,
     winner,
     setWinner,
+    selectedHeroesMiniatures,
+    setSelectedHeroesMiniatures,
   }), [
     searchTerm,
     selectedHeroes,
     modalOpen,
     winner, 
+    selectedHeroesMiniatures,
   ]);
 
   return (

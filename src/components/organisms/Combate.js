@@ -17,12 +17,14 @@ function Combate() {
     winner,
     setWinner,
     setSearchTerm,
+    setSelectedHeroesMiniatures,
   } = useContext(JourneyContext);
 
   const closeModal = () => {
     setModalOpen(false);
     setSelectedHeroes([]);
     setSearchTerm('');
+    setSelectedHeroesMiniatures([]);
   };
 
   const calculateTotalPowerStats = (hero) => {

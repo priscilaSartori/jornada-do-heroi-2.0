@@ -3,8 +3,9 @@ import styles from '../styles/Sidenav.module.css';
 import JourneyContext from '../../context/JourneyContext';
 import SearchIconAtom from '../atoms/SearchIconAtom';
 import ButtonAtom from '../atoms/ButtonAtom';
+import SelectedHeroes from './SelectedHeroes';
 
-function Sidenav() {
+function Sidenav({ selectedHeroesMiniatures, removeFromSelectedHeroesMiniatures }) {
   const { setModalOpen, selectedHeroes, searchTerm, setSearchTerm } = useContext(JourneyContext);
 
   const openModal = () => {
@@ -34,6 +35,12 @@ function Sidenav() {
         >
           Combate
         </ButtonAtom>
+      </div>
+      <div className={styles.selectedContainer}>
+        <SelectedHeroes
+          selectedHeroes={selectedHeroesMiniatures}
+          onRemove={removeFromSelectedHeroesMiniatures}
+        />
       </div>
     </div>
   );

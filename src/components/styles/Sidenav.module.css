@@ -14,7 +14,7 @@
 .buttonContainer {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 30%;
 }
 
 .searchInputContainer {
@@ -75,6 +75,10 @@
   background-color: #dadada !important;
   width: 180px !important;
   height: 40px !important;
+}
+
+.selectedContainer {
+  width: 10%;
 }
 
 @media screen and (max-width: 750px) {

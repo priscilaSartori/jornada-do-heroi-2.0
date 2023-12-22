@@ -1,0 +1,24 @@
+.selectedUl {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.selectedLi {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectedImage {
+  width: 30px;
+}
+
+.selectedButton {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 30px;
+}
