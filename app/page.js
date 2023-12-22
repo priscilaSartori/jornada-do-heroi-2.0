@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import JourneyProvider from '../context/JourneyProvider';
-import Homepage from './Homepage';
+import JourneyProvider from '../src/context/JourneyProvider';
+import Homepage from '../src/pages/Homepage';
 
 function Home() {
   
